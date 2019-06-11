@@ -45,10 +45,18 @@
             text-decoration: none;
         }
 
-        button {
+        .plus {
             position: fixed;
             right: 10px;
             bottom: 10px;
+        }
+
+        .minus {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 10;
+            color: red;
         }
     </style>
 
@@ -62,23 +70,76 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
     <script>
+        window.onload = function () {
+            initLive()
+        };
+
+        function initLive() {
+            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
+            console.log("fb-lives: ", fbLives)
+            for (link of fbLives) {
+                console.log(link)
+                if (link != null) {
+                    var element = document.createElement("div");
+                    element.innerHTML = `
+                        <button type="button" class="minus" onclick="removeLive(this)">
+                            <i class="fas fa-minus fa-1x"></i>
+                        </button>
+                        <iframe
+                            id = "${link}"
+                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
+                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                            allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
+                    `
+
+                    var first_hardcode = document.getElementById("first_hardcode");
+                    document.body.insertBefore(element, first_hardcode);
+                }
+            }
+        }
+
         function addLive() {
             var link = prompt("Please enter the Facebook link");
             if (link != null) {
                 var element = document.createElement("div");
-                element.innerHTML = `<iframe
-                    src = "https://www.facebook.com/plugins/video.php?href=${link}"
-                    width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
-                    allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >`
+                element.innerHTML = `
+                    <button type="button" class="minus" onclick="removeLive(this)">
+                        <i class="fas fa-minus fa-1x"></i>
+                    </button>
+                    <iframe
+                        id = "${link}"
+                        src = "https://www.facebook.com/plugins/video.php?href=${link}"
+                        width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                        allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
+                `
 
                 var first_hardcode = document.getElementById("first_hardcode");
                 document.body.insertBefore(element, first_hardcode);
+
+
+                var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
+                fbLives.push(link)
+                localStorage.setItem("fbLives", JSON.stringify(fbLives));
             }
         }
+
+        function removeLive(element) {
+            var liveElement = element.parentElement;
+            var link = liveElement.getElementsByTagName("iframe")[0].getAttribute("id")
+            document.body.removeChild(liveElement)
+
+            var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
+            var index = fbLives.indexOf(link)
+            if (index > -1) {
+                fbLives.splice(index, 1);
+            }
+            localStorage.setItem("fbLives", JSON.stringify(fbLives));
+        }
+
     </script>
 
 
-    <button type="button" onclick="addLive()">
+    <button type="button" class="plus" onclick="addLive()">
         <i class="fas fa-plus fa-3x"></i>
     </button>
 
@@ -133,8 +194,6 @@
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FRTHKVNEWS%2Fvideos%2F2203971833043117%2F"
             width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allowFullScreen="true"></iframe>
-        <!-- <a target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/RTHKVNEWS/videos/2203971833043117/">RTHK</a> -->
     </div>
 
 
@@ -143,8 +202,6 @@
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ficablenews%2Fvideos%2F345490309480440%2F"
             width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allowFullScreen="true"></iframe>
-        <!-- <a target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/icablenews/videos/345490309480440/">iCable</a> -->
     </div>
 
 
@@ -153,8 +210,6 @@
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstandnewshk%2Fvideos%2F1026659897536769%2F"
             width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allowFullScreen="true"></iframe>
-        <!-- <a target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/standnewshk/videos/1026659897536769/">Stand News</a> -->
     </div>
 
 
@@ -163,8 +218,6 @@
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhk.nextmedia%2Fvideos%2F1946185982152686%2F"
             width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allowFullScreen="true"></iframe>
-        <!-- <a target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/hk.nextmedia/videos/1946185982152686/">Apple daily</a> -->
     </div>
 
 
