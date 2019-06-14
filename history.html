@@ -12,12 +12,15 @@
         body {
             height: 100%;
             margin: 0;
-            text-align: center;
             background: #222;
         }
 
         h1 {
             color: white;
+        }
+
+        #historyContainer {
+            text-align: center;
         }
 
         .video {
@@ -78,44 +81,264 @@
             font-size: 36px;
             margin-left: 50px;
         }
+
+
+
+        .filterBtn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 10px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            -webkit-animation-name: fadeIn;
+            /* Fade in the background */
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn;
+            animation-duration: 0.4s
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: fixed;
+            bottom: 0;
+            background-color: #fefefe;
+            width: 100%;
+            height: 40%;
+            min-height: 600px;
+            -webkit-animation-name: slideIn;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn;
+            animation-duration: 0.4s
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 10px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 0px 30px 30px 30px;
+        }
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes slideIn {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-</head>
 
-<body>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
+</head>
+
+<body>
     <script type="text/javascript" language="javascript" src="historyData.js"></script>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Live</a>
+        <a href="javascript:void(0)">History</a>
+        <a href="./highlight.html">Highlight</a>
+    </div>
+
+    <span class="navbutton" onclick="openNav()">&#9776;</span>
+
+
+
+
+    <!-- Trigger/Open The Modal -->
+    <button id="filterBtn" class="filterBtn">
+        <i class="fas fa-filter fa-3x"></i>
+    </button>
+
+    <!-- The Modal -->
+    <div id="filterModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <form name="filterForm" action="javascript:handleFilter()">
+                <div class="modal-header">
+                    <!-- <h2>Filter</h2> -->
+                    <input name="Submit" type="submit" value="Search" />
+                </div>
+                <div class="modal-body">
+                    <p>Date: </p>
+                    <input type="text" name="datetimes" style="min-width: 250px;" />
+
+                    <p>Channels: </p>
+                    <input type="checkbox" name="channels" value="apple" checked>Apple Daily<br>
+                    <input type="checkbox" name="channels" value="icable" checked>iCable<br>
+                    <input type="checkbox" name="channels" value="now" checked>Now News<br>
+                    <input type="checkbox" name="channels" value="stand" checked>Stand News<br>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div id="historyContainer">
+
+    </div>
+
 
     <script type="text/javascript">
+
+        // left: 37, up: 38, right: 39, down: 40,
+        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+        var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+        function preventDefault(e) {
+            e = e || window.event;
+            if (e.preventDefault)
+                e.preventDefault();
+            e.returnValue = false;
+        }
+
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+
+        function disableScroll() {
+            if (window.addEventListener) // older FF
+                window.addEventListener('DOMMouseScroll', preventDefault, false);
+            document.addEventListener('wheel', preventDefault, { passive: false }); // Disable scrolling in Chrome
+            window.onwheel = preventDefault; // modern standard
+            window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+            window.ontouchmove = preventDefault; // mobile
+            document.onkeydown = preventDefaultForScrollKeys;
+        }
+
+        function enableScroll() {
+            if (window.removeEventListener)
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            document.removeEventListener('wheel', preventDefault, { passive: false }); // Enable scrolling in Chrome
+            window.onmousewheel = document.onmousewheel = null;
+            window.onwheel = null;
+            window.ontouchmove = null;
+            document.onkeydown = null;
+        }
+
+        var maxDate = null;
+        var minDate = null;
 
         window.onload = function () {
             initHistory()
         };
 
         function initHistory() {
-
-            console.log(historyData)
-
             historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1))
 
-            console.log(historyData)
-
-            var date = null;
+            var currDate = null;
 
             for (obj of historyData) {
 
-                console.log(obj.startTime.slice(0, 10))
-                if (date != obj.startTime.slice(0, 10)) {
-                    date = obj.startTime.slice(0, 10);
+                var objDate = obj.startTime.slice(0, 10);
+                if (currDate != objDate) {
+                    currDate = objDate;
                     var dateText = document.createElement("h1");
-                    dateText.innerText = date;
+                    dateText.innerText = currDate;
                     document.getElementById("historyContainer").appendChild(dateText);
                 }
+
+                if (!maxDate || new Date(maxDate) < new Date(objDate))
+                    maxDate = objDate;
+                if (!minDate || new Date(minDate) > new Date(objDate))
+                    minDate = objDate;
 
                 var element = document.createElement("div");
                 element.className = "video";
@@ -129,6 +352,17 @@
                 document.getElementById("historyContainer").appendChild(element);
             }
 
+            $('input[name="datetimes"]').daterangepicker({
+                timePicker: true,
+                timePicker24Hour: true,
+                minDate: moment(minDate, "YYYY-MM-DD"),
+                maxDate: moment(maxDate, "YYYY-MM-DD").add(24, 'hour').subtract(1, "minute"),
+                startDate: moment(minDate, "YYYY-MM-DD"),
+                endDate: moment(maxDate, "YYYY-MM-DD").add(24, 'hour').subtract(1, "minute"),
+                locale: {
+                    format: 'YYYY/MM/DD HH:mm'
+                }
+            });
         }
 
         function openNav() {
@@ -139,22 +373,79 @@
             document.getElementById("mySidenav").style.width = "0";
         }
 
+        // When the user clicks the button, open the modal 
+        filterBtn.onclick = function () {
+            filterModal.style.display = "block";
+            disableScroll();
+        }
 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == filterModal) {
+                filterModal.style.display = "none";
+                enableScroll();
+            }
+        }
+
+        function handleFilter() {
+            var period = document.getElementsByName('datetimes')[0].value;
+            var datetimeArr = period.split(" - ");
+            var channelArr = [];
+            $("input:checkbox[name=channels]:checked").each(function () {
+                channelArr.push($(this).val());
+            });
+            // Clear the screen
+            document.getElementById("historyContainer").innerHTML = ""
+
+            var currDate = null;
+            for (obj of historyData) {
+                var objDate = obj.startTime.slice(0, 10);
+                if (new Date(datetimeArr[0]) < new Date(objDate) && new Date(objDate) < new Date(datetimeArr[1]) && channelArr.includes(obj.tv)) {
+                    if (currDate != objDate) {
+                        currDate = objDate;
+                        var dateText = document.createElement("h1");
+                        dateText.innerText = currDate;
+                        document.getElementById("historyContainer").appendChild(dateText);
+                    }
+
+                    var element = document.createElement("div");
+                    element.className = "video";
+                    element.innerHTML = `
+                    <iframe
+                        id = "${obj.url}"
+                        src = "https://www.facebook.com/plugins/video.php?href=${obj.url}"
+                        width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                        allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
+                    `
+                    document.getElementById("historyContainer").appendChild(element);
+                }
+            }
+
+            filterModal.style.display = "none";
+            enableScroll();
+        }
     </script>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html">Live</a>
-        <a href="javascript:void(0)">History</a>
-        <a href="./highlight.html">Highlight</a>
-    </div>
+</body>
 
-    <span class="navbutton" onclick="openNav()">&#9776;</span>
+</html>
 
-    <div id="historyContainer">
 
-    </div>
-    <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
     <div>
         <iframe id="https://www.facebook.com/standnewshk/videos/1275013182662719/"
             src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/1275013182662719/"
@@ -436,8 +727,3 @@
             width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allowFullScreen="true"></iframe>
     </div> -->
-
-
-</body>
-
-</html>
