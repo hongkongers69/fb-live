@@ -59,6 +59,7 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            text-align: center;
         }
 
         .sidenav a {
@@ -321,10 +322,10 @@
         };
 
         function initHistory() {
-            // historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1))
-            // ;
-            historyData.sort((a, b) =>(new Date(a.startTime)> new Date(b.startTime) ? -1 : new Date(a.startTime)< new Date(b.startTime) ? 1 : 0 ));
-
+            // historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1));
+            historyData.sort(function (a, b) {
+                return new Date(a.startTime) > new Date(b.startTime) ? -1 : new Date(a.startTime) < new Date(b.startTime) ? 1 : 0
+            });
 
             var currDate = null;
 
