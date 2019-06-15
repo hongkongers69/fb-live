@@ -20,7 +20,7 @@
             color: white;
         }
 
-        div {
+        .video {
             position: relative;
             display: inline-block;
             width: calc(43%);
@@ -28,7 +28,7 @@
             padding-top: calc(56.25% * 0.43);
         }
 
-        div>iframe {
+        .video>iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -94,14 +94,14 @@
         }
     </style>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="liveData.js"></script>
 
     <script>
         window.onload = function () {
@@ -109,12 +109,40 @@
         };
 
         function initLive() {
-            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
-            console.log("fb-lives: ", fbLives)
-            for (link of fbLives) {
-                console.log(link)
-                if (link != null) {
+
+            // Handle default channel
+            var defaultDiv = document.getElementById("default");
+            var customDiv = document.getElementById("custom");
+
+            if (liveData.length <= 0) {
+                defaultDiv.innerHTML = "<h1>No Default Channel</h1>"
+            }
+
+            for (obj of liveData) {
+                console.log(obj)
+                if (obj.url) {
                     var element = document.createElement("div");
+                    element.className = "video";
+                    element.innerHTML = `
+                        <button type="button" class="minus" onclick="removeLive(this)">
+                            <i class="fas fa-minus fa-1x"></i>
+                        </button>
+                        <iframe
+                            id = "${obj.url}"
+                            src = "https://www.facebook.com/plugins/video.php?href=${obj.url}"
+                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                            allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
+                    `
+                    defaultDiv.append(element);
+                }
+            }
+
+            // Handle customized channel
+            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
+            for (link of fbLives) {
+                if (link) {
+                    var element = document.createElement("div");
+                    element.className = "video";
                     element.innerHTML = `
                         <button type="button" class="minus" onclick="removeLive(this)">
                             <i class="fas fa-minus fa-1x"></i>
@@ -126,8 +154,7 @@
                             allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
                     `
 
-                    var addButton = document.getElementById("addButton");
-                    document.body.insertBefore(element, addButton);
+                    customDiv.append(element);
                 }
             }
         }
@@ -191,48 +218,18 @@
         <i class="fas fa-plus fa-3x"></i>
     </button>
 
-    <div>
-      <h1>No Live Yet</hi>
+    <div id="custom">
     </div>
-    <!-- <div>
-        <button type="button" class="minus" onclick="removeLive(this)">
-            <i class="fas fa-minus fa-1x"></i>
-        </button>
-        <iframe id="https://www.facebook.com/standnewshk/videos/489028795178576/"
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/489028795178576/"
-            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowTransparency="true" allowFullScreen="true" webkit-playsinline></iframe>
+
+    <div id="default">
     </div>
 
     <div>
-        <button type="button" class="minus" onclick="removeLive(this)">
-            <i class="fas fa-minus fa-1x"></i>
-        </button>
-        <iframe id="https://www.facebook.com/standnewshk/videos/415941289002222/"
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/415941289002222/"
-            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowTransparency="true" allowFullScreen="true" webkit-playsinline></iframe>
+        <h1>
+
+        </h1>
     </div>
 
-    <div>
-        <button type="button" class="minus" onclick="removeLive(this)">
-            <i class="fas fa-minus fa-1x"></i>
-        </button>
-        <iframe id="https://www.facebook.com/standnewshk/videos/1976374575799671/"
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/1976374575799671/"
-            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowTransparency="true" allowFullScreen="true" webkit-playsinline></iframe>
-    </div>
-
-    <div>
-        <button type="button" class="minus" onclick="removeLive(this)">
-            <i class="fas fa-minus fa-1x"></i>
-        </button>
-        <iframe id="https://www.facebook.com/standnewshk/videos/338713900158181/"
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/338713900158181/"
-            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowTransparency="true" allowFullScreen="true" webkit-playsinline></iframe>
-    </div> -->
 </body>
 
 </html>
