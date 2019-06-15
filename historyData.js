@@ -194,8 +194,20 @@ var historyData = [
         "tv": "now"
     },
 
-    
+
     // ------------------------- Stand --------------------------------------
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/424453974775810/",
+        "startTime": "2019-06-15 16:30:00",
+        "endTime": "2019-06-15 17:15:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2203833846522504/",
+        "startTime": "2019-06-15 14:30:00",
+        "endTime": "2019-06-15 16:00:00",
+        "tv": "stand"
+    },
     {
         "url": "https://www.facebook.com/standnewshk/videos/415941289002222/",
         "startTime": "2019-06-14 20:32:00",
