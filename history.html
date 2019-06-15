@@ -322,7 +322,7 @@
 
         function initHistory() {
             // historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1))
-            historyData.sort((a, b) =>(new Date(a.startTime).getTime() > new Date(b.startTime).getTime() ? -1 : 1))
+            historyData.sort((a, b) =>(new Date(a.startTime)> new Date(b.startTime) ? -1 : new Date(a.startTime)< new Date(b.startTime) ? 1 : 0))
 
             var currDate = null;
 
