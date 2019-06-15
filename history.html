@@ -321,7 +321,8 @@
         };
 
         function initHistory() {
-            historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1))
+            // historyData.sort((a, b) => (new Date(a.startTime) > new Date(b.startTime) ? -1 : 1))
+            historyData.sort((a, b) =>(new Date(a.startTime).getTime() > new Date(b.startTime).getTime() ? -1 : 1))
 
             var currDate = null;
 
@@ -373,7 +374,7 @@
             document.getElementById("mySidenav").style.width = "0";
         }
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal
         filterBtn.onclick = function () {
             filterModal.style.display = "block";
             disableScroll();
@@ -445,7 +446,7 @@
 
 
 
-<!-- 
+<!--
     <div>
         <iframe id="https://www.facebook.com/standnewshk/videos/1275013182662719/"
             src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/standnewshk/videos/1275013182662719/"
