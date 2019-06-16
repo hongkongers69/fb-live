@@ -10,5 +10,11 @@ var liveData = [
         "startTime": "",
         "endTime": "",
         "tv": "now"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2498940580334560/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "stand"
     }
 ]
