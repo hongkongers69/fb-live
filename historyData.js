@@ -2,6 +2,12 @@ var historyData = [
 
     // ------------------------ Apple Daily -----------------------------------
     {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/310378423179686/",
+        "startTime": "2019-06-16 21:00:00",
+        "endTime": "2019-06-17 02:10:00",
+        "tv": "apple"
+    },
+    {
         "url": "https://www.facebook.com/hk.nextmedia/videos/2385543361676096/",
         "startTime": "2019-06-16 14:00:00",
         "endTime": "2019-06-16 20:20:00",
@@ -277,6 +283,12 @@ var historyData = [
     },
 
     // -------------------------- Stand News -----------------------------------
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/491226381619825/",
+        "startTime": "2019-06-17 01:30:00",
+        "endTime": "2019-06-17 02:00:00",
+        "tv": "stand"
+    },
     {
         "url": "https://www.facebook.com/standnewshk/videos/657330324737543/",
         "startTime": "2019-06-16 23:00:00",
