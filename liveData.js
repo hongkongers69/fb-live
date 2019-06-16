@@ -4,5 +4,5 @@ var liveData = [
         "startTime": "2019-06-16 12:57:00",
         "endTime": "",
         "tv": "stand"
-    },
+    }
 ]
