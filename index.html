@@ -109,11 +109,30 @@
         };
 
         function initLive() {
+            var videoContainer = document.getElementById("videoContainer");
+
+            // Handle customized channel
+            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
+            for (link of fbLives) {
+                if (link) {
+                    var element = document.createElement("div");
+                    element.className = "video";
+                    element.innerHTML = `
+                        <button type="button" class="minus" onclick="removeLive(this)">
+                            <i class="fas fa-minus fa-1x"></i>
+                        </button>
+                        <iframe
+                            id = "${link}"
+                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
+                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                            allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
+                    `
+
+                    videoContainer.append(element);
+                }
+            }
 
             // Handle default channel
-            var defaultDiv = document.getElementById("default");
-            var customDiv = document.getElementById("custom");
-
             if (liveData.length <= 0) {
                 defaultDiv.innerHTML = "<h1>No Default Channel</h1>"
             }
@@ -133,30 +152,11 @@
                             width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
                             allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
                     `
-                    defaultDiv.append(element);
+                    videoContainer.append(element);
                 }
             }
 
-            // Handle customized channel
-            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
-            for (link of fbLives) {
-                if (link) {
-                    var element = document.createElement("div");
-                    element.className = "video";
-                    element.innerHTML = `
-                        <button type="button" class="minus" onclick="removeLive(this)">
-                            <i class="fas fa-minus fa-1x"></i>
-                        </button>
-                        <iframe
-                            id = "${link}"
-                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
-                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
-                            allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
-                    `
 
-                    customDiv.append(element);
-                }
-            }
         }
 
         function addLive() {
@@ -175,8 +175,7 @@
                         allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
                 `
 
-                var addButton = document.getElementById("addButton");
-                document.body.insertBefore(element, addButton);
+                videoContainer.insertBefore(element, videoContainer.children[0]);
 
                 var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
                 fbLives.push(link)
@@ -186,11 +185,11 @@
 
         function removeLive(element) {
             var liveElement = element.parentElement;
-            var link = liveElement.getElementsByTagName("iframe")[0].getAttribute("id")
-            document.body.removeChild(liveElement)
+            var link = liveElement.getElementsByTagName("iframe")[0].getAttribute("id");
+            videoContainer.removeChild(liveElement);
 
             var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
-            var index = fbLives.indexOf(link)
+            var index = fbLives.indexOf(link);
             if (index > -1) {
                 fbLives.splice(index, 1);
             }
@@ -219,10 +218,7 @@
         <i class="fas fa-plus fa-3x"></i>
     </button>
 
-    <div id="custom">
-    </div>
-
-    <div id="default">
+    <div id="videoContainer">
     </div>
 
     <div>
