@@ -119,8 +119,8 @@
             }
 
             for (obj of liveData) {
-                console.log(obj)
-                if (obj.url) {
+                var link = obj.url;
+                if (link) {
                     var element = document.createElement("div");
                     element.className = "video";
                     element.innerHTML = `
@@ -128,8 +128,8 @@
                             <i class="fas fa-minus fa-1x"></i>
                         </button>
                         <iframe
-                            id = "${obj.url}"
-                            src = "https://www.facebook.com/plugins/video.php?href=${obj.url}"
+                            id = "${link}"
+                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
                             width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
                             allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
                     `
@@ -163,7 +163,6 @@
             var link = prompt("Please enter the Facebook link");
             if (link != null) {
                 var element = document.createElement("div");
-element.className = "video";
                 element.innerHTML = `
                     <button type="button" class="minus" onclick="removeLive(this)">
                         <i class="fas fa-minus fa-1x"></i>
@@ -227,8 +226,7 @@ element.className = "video";
 
     <div>
         <h1>
-            在此呼籲各位請盡可能參加616遊行並帶同鮮花/紙花/紙鶴以作記念，謹記以「只撤不緩」為最終目的。<br>
-            因遊行期間未能取得最新消息，如有最新直播，請在 <a href="https://lihkg.com/thread/1228615/">LIHKG</a> 上留言。
+            如有最新直播，請在 <a href="https://lihkg.com/thread/1228615/">LIHKG</a> 上留言。
         </h1>
     </div>
 
