@@ -6,7 +6,7 @@ var liveData = [
         "tv": "now"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/2236708109992472/",
+        "url": "https://www.facebook.com/standnewshk/videos/461997384533790/",
         "startTime": "",
         "endTime": "",
         "tv": "stand"
