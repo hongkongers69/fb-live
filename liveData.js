@@ -1,10 +1,4 @@
 var liveData = [
-    //{
-    //    "url": "https://www.facebook.com/standnewshk/videos/2257456607641124/",
-     //   "startTime": "",
-     //   "endTime": "",
-     //   "tv": "stand"
-    //},
     {
         "url": "https://www.facebook.com/now.comNews/videos/2135179276550827/",
         "startTime": "",
@@ -12,7 +6,7 @@ var liveData = [
         "tv": "now"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/2498940580334560/",
+        "url": "https://www.facebook.com/standnewshk/videos/2236708109992472/",
         "startTime": "",
         "endTime": "",
         "tv": "stand"
