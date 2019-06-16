@@ -163,6 +163,7 @@
             var link = prompt("Please enter the Facebook link");
             if (link != null) {
                 var element = document.createElement("div");
+                element.className = "video";
                 element.innerHTML = `
                     <button type="button" class="minus" onclick="removeLive(this)">
                         <i class="fas fa-minus fa-1x"></i>
