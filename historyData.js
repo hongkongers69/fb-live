@@ -1,112 +1,46 @@
 var historyData = [
 
-    // -------------------- Apple Daily -------------------------------------
+    // ------------------------ Apple Daily -----------------------------------
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/664747860664324/",
-        "startTime": "2019-06-09 14:20:00",
-        "endTime": "2019-06-09 16:45:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2385543361676096/",
+        "startTime": "2019-06-16 14:00:00",
+        "endTime": "2019-06-16 20:20:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/336412023715970/",
-        "startTime": "2019-06-09 17:00:00",
-        "endTime": "2019-06-09 20:40:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/885022285166321/",
+        "startTime": "2019-06-15 17:15:00",
+        "endTime": "2019-06-15 18:00:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/465453674190950/",
-        "startTime": "2019-06-09 20:40:00",
-        "endTime": "2019-06-10 00:30:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/410806389646922/",
+        "startTime": "2019-06-15 14:10:00",
+        "endTime": "2019-06-15 15:40:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/1946185982152686/",
-        "startTime": "2019-06-10 00:30:00",
-        "endTime": "2019-06-10 03:30:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2425483517696271/",
+        "startTime": "2019-06-15 12:00:00",
+        "endTime": "2019-06-15 13:45:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2326441941010008/",
-        "startTime": "2019-06-10 00:50:00",
-        "endTime": "2019-06-10 01:10:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2066175420178875/",
+        "startTime": "2019-06-15 10:55:00",
+        "endTime": "2019-06-15 11:40:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2037492213213752/",
-        "startTime": "2019-06-10 03:35:00",
-        "endTime": "2019-06-10 03:45:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2289301838051870/",
+        "startTime": "2019-06-13 21:30:00",
+        "endTime": "2019-06-13 23:00:00",
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/1165590100295488/",
-        "startTime": "2019-06-10 12:50:00",
-        "endTime": "2019-06-10 13:40:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/1333688990089232/",
-        "startTime": "2019-06-11 13:15:00",
-        "endTime": "2019-06-11 14:00:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/428666311317576/",
-        "startTime": "2019-06-11 20:50:00",
-        "endTime": "2019-06-12 00:20:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/893853284296503/",
-        "startTime": "2019-06-12 00:30:00",
-        "endTime": "2019-06-12 03:00:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/397224154226633/",
-        "startTime": "2019-06-12 08:30:00",
-        "endTime": "2019-06-12 09:45:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2354852654835010/",
-        "startTime": "2019-06-12 11:00:00",
-        "endTime": "2019-06-12 14:30:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2312019579060432/",
-        "startTime": "2019-06-12 16:45:00",
-        "endTime": "2019-06-12 17:40:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/697915173997425/",
-        "startTime": "2019-06-12 17:40:00",
-        "endTime": "2019-06-12 17:55:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/449904805829070/",
-        "startTime": "2019-06-12 18:15:00",
-        "endTime": "2019-06-12 21:45:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2974461805898105/",
-        "startTime": "2019-06-12 21:50:00",
-        "endTime": "2019-06-13 01:30:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2426861420866752/",
-        "startTime": "2019-06-13 01:35:00",
-        "endTime": "2019-06-13 02:30:00",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/453584728772048/",
-        "startTime": "2019-06-13 08:20:00",
-        "endTime": "2019-06-13 09:10:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/398873840715480/",
+        "startTime": "2019-06-13 16:40:00",
+        "endTime": "2019-06-13 17:40:00",
         "tv": "apple"
     },
     {
@@ -116,14 +50,139 @@ var historyData = [
         "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2289301838051870/",
-        "startTime": "2019-06-13 21:30:00",
-        "endTime": "2019-06-13 23:00:00",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/453584728772048/",
+        "startTime": "2019-06-13 08:20:00",
+        "endTime": "2019-06-13 09:10:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2426861420866752/",
+        "startTime": "2019-06-13 01:35:00",
+        "endTime": "2019-06-13 02:30:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2974461805898105/",
+        "startTime": "2019-06-12 21:50:00",
+        "endTime": "2019-06-13 01:30:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/449904805829070/",
+        "startTime": "2019-06-12 18:15:00",
+        "endTime": "2019-06-12 21:45:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/697915173997425/",
+        "startTime": "2019-06-12 17:40:00",
+        "endTime": "2019-06-12 17:55:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2312019579060432/",
+        "startTime": "2019-06-12 16:45:00",
+        "endTime": "2019-06-12 17:40:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2354852654835010/",
+        "startTime": "2019-06-12 11:00:00",
+        "endTime": "2019-06-12 14:30:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/397224154226633/",
+        "startTime": "2019-06-12 08:30:00",
+        "endTime": "2019-06-12 09:45:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/893853284296503/",
+        "startTime": "2019-06-12 00:30:00",
+        "endTime": "2019-06-12 03:00:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/428666311317576/",
+        "startTime": "2019-06-11 20:50:00",
+        "endTime": "2019-06-12 00:20:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/1333688990089232/",
+        "startTime": "2019-06-11 13:15:00",
+        "endTime": "2019-06-11 14:00:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/1165590100295488/",
+        "startTime": "2019-06-10 12:50:00",
+        "endTime": "2019-06-10 13:40:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2037492213213752/",
+        "startTime": "2019-06-10 03:35:00",
+        "endTime": "2019-06-10 03:45:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/2326441941010008/",
+        "startTime": "2019-06-10 00:50:00",
+        "endTime": "2019-06-10 01:10:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/1946185982152686/",
+        "startTime": "2019-06-10 00:30:00",
+        "endTime": "2019-06-10 03:30:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/465453674190950/",
+        "startTime": "2019-06-09 20:40:00",
+        "endTime": "2019-06-10 00:30:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/336412023715970/",
+        "startTime": "2019-06-09 17:00:00",
+        "endTime": "2019-06-09 20:40:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/664747860664324/",
+        "startTime": "2019-06-09 14:20:00",
+        "endTime": "2019-06-09 16:45:00",
         "tv": "apple"
     },
 
-
-    // ------------------- iCable -------------------------------------------
+    // -------------------------- iCable -----------------------------------
+    {
+        "url": "https://www.facebook.com/icablenews/videos/942098666131952/",
+        "startTime": "2019-06-16 22:20:00",
+        "endTime": "2019-06-17 00:00:00",
+        "tv": "icablenews"
+    },
+    {
+        "url": "https://www.facebook.com/icablenews/videos/942098666131952/",
+        "startTime": "2019-06-16 13:45:00",
+        "endTime": "2019-06-16 21:30:00",
+        "tv": "icablenews"
+    },
+    {
+        "url": "https://www.facebook.com/icablenews/videos/1896584730440994/",
+        "startTime": "2019-06-15 14:20:00",
+        "endTime": "2019-06-15 15:50:00",
+        "tv": "icablenews"
+    },
+    {
+        "url": "https://www.facebook.com/icablenews/videos/2359759377641534/",
+        "startTime": "2019-06-13 16:55:00",
+        "endTime": "2019-06-13 17:30:00",
+        "tv": "icablenews"
+    },
     {
         "url": "https://www.facebook.com/icablenews/videos/461595081319502/",
         "startTime": "2019-06-13 00:03:00",
@@ -161,8 +220,31 @@ var historyData = [
         "tv": "icablenews"
     },
 
-
-    // -------------------- Now ----------------------------------------------
+    // -------------------------- Now News -----------------------------------
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/1460922927382712/",
+        "startTime": "2019-06-16 21:35:00",
+        "endTime": "2019-06-16 23:25:00",
+        "tv": "now"
+    },
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/2135179276550827/",
+        "startTime": "2019-06-16 12:45:00",
+        "endTime": "2019-06-16 20:45:00",
+        "tv": "now"
+    },
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/2208440715860155/",
+        "startTime": "2019-06-15 14:35:00",
+        "endTime": "2019-06-15 16:05:00",
+        "tv": "now"
+    },
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/467272603846889/",
+        "startTime": "2019-06-13 16:10:00",
+        "endTime": "2019-06-13 16:45:00",
+        "tv": "now"
+    },
     {
         "url": "https://www.facebook.com/now.comNews/videos/601135177061821/",
         "startTime": "2019-06-12 21:51:00",
@@ -194,8 +276,97 @@ var historyData = [
         "tv": "now"
     },
 
-
-    // ------------------------- Stand --------------------------------------
+    // -------------------------- Stand News -----------------------------------
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/657330324737543/",
+        "startTime": "2019-06-16 23:00:00",
+        "endTime": "2019-06-17 00:40:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/358023401783002/",
+        "startTime": "2019-06-16 22:50:00",
+        "endTime": "2019-06-17 01:10:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2234164560156364/",
+        "startTime": "2019-06-16 19:00:00",
+        "endTime": "2019-06-16 19:25:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2303164089939493/",
+        "startTime": "2019-06-16 18:00:00",
+        "endTime": "2019-06-16 18:45:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/461997384533790/",
+        "startTime": "2019-06-16 15:35:00",
+        "endTime": "2019-06-16 18:40:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2236708109992472/",
+        "startTime": "2019-06-16 15:20:00",
+        "endTime": "2019-06-16 17:50:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2498940580334560/",
+        "startTime": "2019-06-16 14:40:00",
+        "endTime": "2019-06-16 15:25:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2257456607641124/",
+        "startTime": "2019-06-16 14:40:00",
+        "endTime": "2019-06-16 14:45:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/2257456607641124/",
+        "startTime": "2019-06-16 14:40:00",
+        "endTime": "2019-06-16 14:45:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/370661430475832/",
+        "startTime": "2019-06-16 14:05:00",
+        "endTime": "2019-06-16 14:20:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/847712822276574/",
+        "startTime": "2019-06-16 13:35:00",
+        "endTime": "2019-06-16 13:55:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/311297989817852/",
+        "startTime": "2019-06-16 13:20:00",
+        "endTime": "2019-06-16 13:30:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/404777896794605/",
+        "startTime": "2019-06-16 12:55:00",
+        "endTime": "2019-06-16 13:05:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/378759496085406/",
+        "startTime": "2019-06-16 12:55:00",
+        "endTime": "2019-06-16 13:15:00",
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/378759496085406/",
+        "startTime": "2019-06-15 17:45:00",
+        "endTime": "2019-06-15 18:15:00",
+        "tv": "stand"
+    },
     {
         "url": "https://www.facebook.com/standnewshk/videos/424453974775810/",
         "startTime": "2019-06-15 16:30:00",
