@@ -98,10 +98,34 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <script type="text/javascript" language="javascript" src="liveData.js"></script>
 </head>
 
 <body>
-    <script type="text/javascript" language="javascript" src="liveData.js"></script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)">Live</a>
+        <a href="./history.html">History</a>
+        <a href="./highlight.html">Highlight</a>
+    </div>
+
+    <span class="navbutton" onclick="openNav()">&#9776;</span>
+
+    <button id="addButton" type="button" class="plus" onclick="addLive()">
+        <i class="fas fa-plus fa-3x"></i>
+    </button>
+
+    <div id="videoContainer">
+    </div>
+
+    <div>
+        <h1>
+            如有最新直播，請在 <a href="https://lihkg.com/thread/1228615/">LIHKG</a> 上留言。
+        </h1>
+    </div>
 
     <script>
         window.onload = function () {
@@ -204,29 +228,6 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="javascript:void(0)">Live</a>
-        <a href="./history.html">History</a>
-        <a href="./highlight.html">Highlight</a>
-    </div>
-
-    <span class="navbutton" onclick="openNav()">&#9776;</span>
-
-    <button id="addButton" type="button" class="plus" onclick="addLive()">
-        <i class="fas fa-plus fa-3x"></i>
-    </button>
-
-    <div id="videoContainer">
-    </div>
-
-    <div>
-        <h1>
-            如有最新直播，請在 <a href="https://lihkg.com/thread/1228615/">LIHKG</a> 上留言。
-        </h1>
-    </div>
-
 </body>
 
 </html>
