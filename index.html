@@ -136,7 +136,7 @@
             var videoContainer = document.getElementById("videoContainer");
 
             // Handle customized channel
-            var fbLives = JSON.parse(localStorage.getItem("fbLives"));
+            var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
             for (link of fbLives) {
                 if (link) {
                     var element = document.createElement("div");
