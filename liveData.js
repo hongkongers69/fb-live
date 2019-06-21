@@ -11,6 +11,13 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "NTDChinese"
     // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "icable"
+    // },
 
     {
         "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
@@ -38,6 +45,13 @@ var liveData = [
         "startTime": "",
         "endTime": "",
         "tv": "RTHK"
+    },
+
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "apple"
     },
 
     {
