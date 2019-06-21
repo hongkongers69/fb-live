@@ -17,12 +17,11 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "now"
     // }
-    
     {
-        "url": "https://www.facebook.com/passiontimes/videos/2346266568994938/",
+        "url": "https://www.facebook.com/NTDChinese/videos/301383400745751/",
         "startTime": "",
         "endTime": "",
-        "tv": "passionTimes"
+        "tv": "NTDChinese"
     },
 
     {
@@ -39,6 +38,13 @@ var liveData = [
         "tv": "antiDogAnimation"
     },
 
+    {
+        "url": "https://www.facebook.com/passiontimes/videos/2346266568994938/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "passionTimes"
+    },
+    
     {
         "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
         "startTime": "",
