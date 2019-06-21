@@ -62,6 +62,18 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "apple"
     // },
+    // {
+    //     "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "RTHK"
+    // },
+    // {
+    //     "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "apple"
+    // },
 
     {
         "url": "https://www.facebook.com/icablenews/videos/419735841966355/",
@@ -78,14 +90,14 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/641551026358966/",
         "startTime": "",
         "endTime": "",
         "tv": "RTHK"
     },
 
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/1144829342372056/",
         "startTime": "",
         "endTime": "",
         "tv": "apple"
