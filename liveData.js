@@ -44,12 +44,12 @@ var liveData = [
         //     "endTime": "",
         //     "tv": "RTHK"
         // },
-    {
-        "url": "https://www.facebook.com/inmediahk/videos/2301333146621323/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "icable"
-    },
+    // {
+    //     "url": "https://www.facebook.com/inmediahk/videos/2301333146621323/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "icable"
+    // },
 
     {
         "url": "https://www.facebook.com/icablenews/videos/419735841966355/",
@@ -77,55 +77,55 @@ var liveData = [
         "startTime": "",
         "endTime": "",
         "tv": "apple"
-    },
-
-    {
-        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "icable"
-    },
-
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/434764160638354/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "antiDogAnimation"
-    },
-
-    {
-        "url": "https://www.facebook.com/passiontimes/videos/2346266568994938/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "passionTimes"
-    },
-
-    {
-        "url": "https://www.facebook.com/standnewshk/videos/1262555610580186/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "stand"
-    },
-
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/994308880771799/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "apple"
-    },
-
-    {
-        "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "stand"
-    },
-
-    {
-        "url": "https://www.facebook.com/icablenews/videos/1389013357906269/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "icable"
     }
+    //
+    // {
+    //     "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "icable"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/hk.nextmedia/videos/434764160638354/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "antiDogAnimation"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/passiontimes/videos/2346266568994938/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "passionTimes"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/standnewshk/videos/1262555610580186/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "stand"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/hk.nextmedia/videos/994308880771799/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "apple"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "stand"
+    // },
+    //
+    // {
+    //     "url": "https://www.facebook.com/icablenews/videos/1389013357906269/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "icable"
+    // }
 
 ]
