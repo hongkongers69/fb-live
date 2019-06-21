@@ -11,6 +11,40 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "NTDChinese"
     // },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/1262555610580186/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "stand"
+    },
+
+    {
+        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "icable"
+    },
+
+    {
+        "url": "https://www.facebook.com/passiontimes/videos/2781751231898216/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "passionTimes"
+    },
+
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/441700159958792/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "now"
+    },
+
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/994308880771799/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "apple"
+    },
 
     {
         "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
