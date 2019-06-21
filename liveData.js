@@ -6,18 +6,6 @@ var liveData = [
     //     "tv": "apple"
     // }
     // {
-    //     "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
-    //     "startTime": "",
-    //     "endTime": "",
-    //     "tv": "apple"
-    // },
-    // {
-    //     "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
-    //     "startTime": "",
-    //     "endTime": "",
-    //     "tv": "now"
-    // }
-    // {
     //     "url": "https://www.youtube.com/watch?v=dpE4sGrKXf8/",
     //     "startTime": "",
     //     "endTime": "",
@@ -51,6 +39,7 @@ var liveData = [
         "endTime": "",
         "tv": "stand"
     },
+
     {
         "url": "https://www.facebook.com/icablenews/videos/1389013357906269/",
         "startTime": "",
