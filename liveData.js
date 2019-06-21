@@ -33,13 +33,6 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/epochtimes.taiwan/videos/309874573234900/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "thEpochTimes"
-    },
-
-    {
         "url": "https://www.facebook.com/hk.nextmedia/videos/434764160638354/",
         "startTime": "",
         "endTime": "",
