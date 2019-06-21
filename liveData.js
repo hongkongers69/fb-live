@@ -23,29 +23,28 @@ var liveData = [
         "startTime": "",
         "endTime": "",
         "tv": "passionTimes"
-    }
-    
-    
+    },
+
     {
         "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
         "startTime": "",
         "endTime": "",
         "tv": "RTHK"
-    }
+    },
 
     {
         "url": "https://www.facebook.com/epochtimes.taiwan/videos/309874573234900/",
         "startTime": "",
         "endTime": "",
         "tv": "thEpochTimes"
-    }
+    },
 
     {
         "url": "https://www.facebook.com/hk.nextmedia/videos/434764160638354/",
         "startTime": "",
         "endTime": "",
         "tv": "antiDogAnimation"
-    }
+    },
 
     {
         "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
