@@ -17,12 +17,12 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "now"
     // }
-    {
-        "url": "https://www.youtube.com/watch?v=dpE4sGrKXf8/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "NTDChinese"
-    },
+    // {
+    //     "url": "https://www.youtube.com/watch?v=dpE4sGrKXf8/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "NTDChinese"
+    // },
 
     {
         "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
@@ -44,7 +44,7 @@ var liveData = [
         "endTime": "",
         "tv": "passionTimes"
     },
-    
+
     {
         "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
         "startTime": "",
@@ -57,5 +57,5 @@ var liveData = [
         "endTime": "",
         "tv": "icable"
     }
-    
+
 ]
