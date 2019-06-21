@@ -18,10 +18,21 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "icable"
     // },
-
+    // {
+    //     "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "RTHK"
+    // },
+    // {
+    //     "url": "https://www.facebook.com/passiontimes/videos/2781751231898216/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "passionTimes"
+    // },
 
     {
-        "url": "https://www.facebook.com/passiontimes/videos/2781751231898216/",
+        "url": "https://www.facebook.com/passiontimes/videos/745296405919745/",
         "startTime": "",
         "endTime": "",
         "tv": "passionTimes"
@@ -35,7 +46,7 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
         "startTime": "",
         "endTime": "",
         "tv": "RTHK"
