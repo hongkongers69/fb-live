@@ -73,10 +73,17 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
         "startTime": "",
         "endTime": "",
-        "tv": "apple"
+        "tv": "RTHK"
+    },
+
+    {
+        "url": "https://www.facebook.com/socrec/videos/389809745074406/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "socrec"
     }
     //
     // {
