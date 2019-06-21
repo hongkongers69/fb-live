@@ -19,12 +19,6 @@ var liveData = [
     //     "tv": "icable"
     // },
 
-    {
-        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "icable"
-    },
 
     {
         "url": "https://www.facebook.com/passiontimes/videos/2781751231898216/",
@@ -52,6 +46,13 @@ var liveData = [
         "startTime": "",
         "endTime": "",
         "tv": "apple"
+    },
+
+    {
+        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "icable"
     },
 
     {
