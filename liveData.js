@@ -50,6 +50,12 @@ var liveData = [
     //     "endTime": "",
     //     "tv": "icable"
     // },
+    // {
+    //     "url": "https://www.facebook.com/now.comNews/videos/441700159958792/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "now"
+    // },
 
     {
         "url": "https://www.facebook.com/icablenews/videos/419735841966355/",
@@ -59,7 +65,7 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/now.comNews/videos/441700159958792/",
+        "url": "https://www.facebook.com/now.comNews/videos/2214757628836884/",
         "startTime": "",
         "endTime": "",
         "tv": "now"
