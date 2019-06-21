@@ -18,7 +18,7 @@ var liveData = [
     //     "tv": "now"
     // }
     {
-        "url": "https://www.facebook.com/NTDChinese/videos/301383400745751/",
+        "url": "https://www.youtube.com/watch?v=dpE4sGrKXf8/",
         "startTime": "",
         "endTime": "",
         "tv": "NTDChinese"
