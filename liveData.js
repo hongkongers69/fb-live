@@ -79,10 +79,10 @@ var liveData = [
     },
 
     {
-        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
         "startTime": "",
         "endTime": "",
-        "tv": "RTHK"
+        "tv": "apple"
     },
 
     {
