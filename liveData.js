@@ -4,7 +4,7 @@ var liveData = [
       "startTime": "",
       "endTime": "",
       "tv": "icable"
-  }
+  },
 
   {
       "url": "https://www.facebook.com/RTHKVNEWS/videos/335814967349216/",
@@ -18,5 +18,5 @@ var liveData = [
       "startTime": "",
       "endTime": "",
       "tv": "apple"
-  },
+  }
 ]
