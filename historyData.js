@@ -570,7 +570,7 @@ var historyData = [
         "startTime": "2019-06-09 19:35:00",
         "endTime": "2019-06-09 21:37:00",
         "tv": "stand"
-    }
+    },
 
     //06-17-2019
     //UNKNOW: 26-06 still in live.js
