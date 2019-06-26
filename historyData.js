@@ -571,4 +571,170 @@ var historyData = [
         "endTime": "2019-06-09 21:37:00",
         "tv": "stand"
     }
+
+    //06-17-2019
+    //UNKNOW: 26-06 still in live.js
+
+    // {
+    //     "url": "https://www.facebook.com/hk.nextmedia/videos/322307578703225/",
+    //     "startTime": "2019-06-17 20:59:00",
+    //     "endTime": "2019-06-17 21:30:00",
+    //     "tv": "apple"
+    // },
+    //
+    // {
+    //     "url": "https://www.youtube.com/watch?v=dpE4sGrKXf8/",
+    //     "startTime": "",
+    //     "endTime": "",
+    //     "tv": "NTDChinese"
+    // },
+
+    //21-06
+    {
+        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+        "startTime": "2019-06-21 11:03:00",
+        "endTime": "2019-06-21 12:03:00",
+        "tv": "icable"
+    },
+    {
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/444557129455961/",
+        "startTime": "2019-06-21 07:00:00",
+        "endTime": "2019-06-21 07:08:00",
+        "tv": "RTHK"
+    },
+    {
+        "url": "https://www.facebook.com/passiontimes/videos/2781751231898216/",
+        "startTime": "2019-06-21 10:57:00",
+        "endTime": "2019-06-21 11:01:00",
+        "tv": "passionTimes"
+    },
+
+    {
+        "url": "https://www.facebook.com/passiontimes/videos/745296405919745/",
+        "startTime": "2019-06-21 15:02:00",
+        "endTime": "2019-06-21 15:33:00",
+        "tv": "passionTimes"
+    },
+
+    {
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
+        "startTime": "2019-06-21 15:03:00",
+        "endTime": "2019-06-21 21:40:00",
+        "tv": "RTHK"
+    },
+
+    {
+        "url": "https://www.facebook.com/inmediahk/videos/2301333146621323/",
+        "startTime": "2019-06-21 17:08:00",
+        "endTime": "2019-06-21 17:52:00",
+        "tv": "inmediahk"
+    },
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/441700159958792/",
+        "startTime": "2019-06-21 10:08:00",
+        "endTime": "2019-06-21 18:08:00",
+        "tv": "now"
+    },
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/459012638263351/",
+        "startTime": "2019-06-21 12:50:00",
+        "endTime": "2019-06-21 20:20:00",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/410065656509134/",
+        "startTime": "2019-06-21 15:03:00",
+        "endTime": "2019-06-21 21:40:00",
+        "tv": "RTHK"
+    },
+    {
+        "url": "https://www.facebook.com/icablenews/videos/419735841966355/",
+        "startTime": "2019-06-21 15:28:00",
+        "endTime": "2019-06-21 20:25:00",
+        "tv": "icable"
+    },
+
+    {
+        "url": "https://www.facebook.com/icablenews/videos/337582430256676/",
+        "startTime": "2019-06-21 22:12:00",
+        "endTime": "2019-06-22 01:38:00",
+        "tv": "icable"
+    },
+
+    {
+        "url": "https://www.facebook.com/now.comNews/videos/2214757628836884/",
+        "startTime": "2019-06-21 19:03:00",
+        "endTime": "2019-06-22 05:03:00",
+        "tv": "now"
+    },
+
+    {
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/641551026358966/",
+        "startTime": "2019-06-21 21:37:00",
+        "endTime": "2019-06-22 04:43:00",
+        "tv": "RTHK"
+    },
+
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/1144829342372056/",
+        "startTime": "2019-06-21 20:31:00",
+        "endTime": "2019-06-22 02:55:00",
+        "tv": "apple"
+    },
+
+    {
+        "url": "https://www.facebook.com/socrec/videos/389809745074406/",
+        "startTime": "2019-06-21 18:50:00",
+        "endTime": "2019-06-21 20:04:00",
+        "tv": "socrec"
+    },
+
+    {
+        "url": "https://www.facebook.com/icablenews/videos/481274352669859/",
+        "startTime": "2019-06-21 11:03:00",
+        "endTime": "2019-06-21 13:03:00",
+        "tv": "icable"
+    },
+
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/434764160638354/",
+        "startTime": "2019-06-20 00:00:00",
+        "endTime": "2019-06-20 00:00:00",
+        "tv": "antiDogAnimation"
+    },
+
+    {
+        "url": "https://www.facebook.com/passiontimes/videos/2346266568994938/",
+        "startTime": "2019-06-21 08:26:00",
+        "endTime": "2019-06-21 09:26:00",
+        "tv": "passionTimes"
+    },
+
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/1262555610580186/",
+        "startTime": "2019-06-21 10:59:00",
+        "endTime": "2019-06-21 11:14:00",
+        "tv": "stand"
+    },
+
+    {
+        "url": "https://www.facebook.com/hk.nextmedia/videos/994308880771799/",
+        "startTime": "2019-06-21 09:05:00",
+        "endTime": "2019-06-21 13:44:00",
+        "tv": "apple"
+    },
+
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/838231946576101/",
+        "startTime": "2019-06-21 06:20:00",
+        "endTime": "2019-06-21 06:36:00",
+        "tv": "stand"
+    },
+
+    {
+        "url": "https://www.facebook.com/icablenews/videos/1389013357906269/",
+        "startTime": "2019-06-21 06:36:00",
+        "endTime": "2019-06-21 06:41:00",
+        "tv": "icable"
+    }
 ]
