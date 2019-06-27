@@ -32,8 +32,15 @@ var liveData = [
   //     "tv": "stand"
   // }
 
+  // {
+  //     "url": "https://www.facebook.com/hk.nextmedia/videos/1454190881403587/",
+  //     "startTime": "2019-06-27 09:48:00",
+  //     "endTime": "",
+  //     "tv": "apple"
+  // }
+
   {
-      "url": "https://www.facebook.com/hk.nextmedia/videos/1454190881403587/",
+      "url": "https://www.facebook.com/hk.nextmedia/videos/470393800401856/",
       "startTime": "2019-06-27 09:48:00",
       "endTime": "",
       "tv": "apple"
