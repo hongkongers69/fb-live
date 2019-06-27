@@ -41,8 +41,14 @@ var liveData = [
 
   {
       "url": "https://www.facebook.com/hk.nextmedia/videos/470393800401856/",
-      "startTime": "2019-06-27 09:48:00",
+      "startTime": "2019-06-27 12:50:00",
       "endTime": "",
       "tv": "apple"
+  },
+  {
+      "url": "https://www.facebook.com/RTHKVNEWS/videos/369008093816200/",
+      "startTime": "2019-06-27 12:55:00",
+      "endTime": "",
+      "tv": "rthk"
   }
 ]
