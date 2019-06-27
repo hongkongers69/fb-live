@@ -25,10 +25,17 @@ var liveData = [
   //     "endTime": "",
   //     "tv": "stand"
   // }
+  // {
+  //     "url": "https://www.facebook.com/standnewshk/videos/852866961744246/",
+  //     "startTime": "",
+  //     "endTime": "",
+  //     "tv": "stand"
+  // }
+
   {
-      "url": "https://www.facebook.com/standnewshk/videos/852866961744246/",
-      "startTime": "",
+      "url": "https://www.facebook.com/hk.nextmedia/videos/1454190881403587/",
+      "startTime": "2019-06-27 09:48:00",
       "endTime": "",
-      "tv": "stand"
+      "tv": "apple"
   }
 ]
