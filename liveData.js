@@ -1,45 +1,50 @@
 var liveData = [
     {
-        "url": "https://www.facebook.com/standnewshk/videos/346726759557683/",
+        "url": "https://www.facebook.com/RTHKVNEWS/videos/2293152654235902/",
+        "startTime": "",
+        "endTime": "",
+        "tv": "rthk"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/462382201004359/",
         "startTime": "",
         "endTime": "",
         "tv": "stand"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/2858420010899844/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "stand"
-    },
-    
-    {
-        "url": "https://www.facebook.com/hk.nextmedia/videos/2296338913951065/",
-        "startTime": "",
-        "endTime": "",
-        "tv": "apple"
-    },
-    {
-        "url": "https://www.facebook.com/now.comNews/videos/331012481153584",
+        "url": "https://www.facebook.com/now.comNews/videos/2087688258002843/",
         "startTime": "",
         "endTime": "",
         "tv": "now"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/2138266369803771&autoplay=false",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/402262060379216/",
         "startTime": "",
         "endTime": "",
-        "tv": "stand"
+        "tv": "apple"
     },
     {
-        "url": "https://www.facebook.com/hk01.news/videos/490040748230352&autoplay=false",
+        "url": "https://www.facebook.com/hk.nextmedia/videos/509799579788837&autoplay=false",
+        "startTime": "",
+        "endTime": "",
+        "tv": "apple"
+    },
+    {
+        "url": "https://www.facebook.com/hk01.news/videos/479481385959546&autoplay=false",
         "startTime": "",
         "endTime": "",
         "tv": "hk01"
     },
     {
-        "url": "https://www.facebook.com/inmediahk/videos/430900794173040&autoplay=false",
+        "url": "https://www.facebook.com/standnewshk/videos/377028239683627&autoplay=false",
         "startTime": "",
         "endTime": "",
-        "tv": "inmedia"
-    }
+        "tv": "stand"
+    },
+    {
+        "url": "https://www.facebook.com/standnewshk/videos/500051240735842&autoplay=false",
+        "startTime": "",
+        "endTime": "",
+        "tv": "stand"
+    },
 ]
