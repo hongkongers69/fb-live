@@ -6,7 +6,7 @@ var liveData = [
         "tv": "rthk"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/377028239683627",
+        "url": "https://www.facebook.com/standnewshk/videos/460293998090540/",
         "startTime": "",
         "endTime": "",
         "tv": "stand"
@@ -30,9 +30,9 @@ var liveData = [
         "tv": "hk01"
     },
     {
-        "url": "https://www.facebook.com/standnewshk/videos/500051240735842&autoplay=false",
+        "url": "https://www.facebook.com/standnewshk/videos/428774301074423&autoplay=false",
         "startTime": "",
         "endTime": "",
         "tv": "stand"
-    },
+    }
 ]
