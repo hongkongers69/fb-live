@@ -20,12 +20,16 @@
             color: white;
         }
 
+        .videoContainer {
+            padding: 0 5%;
+            display: grid;
+            grid-auto-rows: auto;
+        }
+
         .video {
             position: relative;
-            display: inline-block;
-            width: calc(43%);
-            /* height: calc(50% - 5px); */
-            padding-top: calc(56.25% * 0.43);
+            width: 100%;
+            padding-top: 56.25%;
         }
 
         .video>iframe {
@@ -40,6 +44,14 @@
             position: fixed;
             right: 20px;
             bottom: 20px;
+            width: 56px;
+        }
+
+        .resize {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            width: 56px;
         }
 
         .minus {
@@ -48,6 +60,34 @@
             top: 10px;
             z-index: 10;
             color: red;
+        }
+
+        .tag {
+            position: absolute;
+            right: 40px;
+            top: 10px;
+            z-index: 10;
+            color: black;
+        }
+
+        .expand {
+            position: absolute;
+            right: 80px;
+            top: 10px;
+            z-index: 10;
+            color: black;
+        }
+
+        .tagText {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            min-width: 100px;
+            margin: 0px;
+            z-index: 10;
+            background: white;
+            color: black;
+
         }
 
         .navbutton {
@@ -122,10 +162,14 @@
         <i class="fas fa-plus fa-3x"></i>
     </button>
 
-    <div id="videoContainer">
+    <button id="resizeButton" type="button" class="resize" onclick="resizeLive()">
+        <i class="fas fa-th fa-3x"></i>
+    </button>
+
+    <div id="videoContainer" class="videoContainer">
     </div>
-    
-    <div>
+
+    <div class=>
         <h1>
             如有最新直播，請在 <a href="https://lihkg.com/thread/1228615/">LIHKG</a> 上留言。
         </h1>
@@ -136,78 +180,85 @@
             initLive()
         };
 
+        // function resize() {
+        //     var colNum = Number.parseInt(localStorage.getItem("colNum")) || 2;
+        //     $('.video').css({ 'width': 'calc(' + 95 / colNum + '%)', 'padding-top': 'calc(56.25% *' + 95 / colNum / 100 + ')' });
+        // }
+
+        function resize() {
+            var colNum = Number.parseInt(localStorage.getItem("colNum")) || 2;
+            $('.videoContainer').css({ 'grid-template-columns': 'repeat(' + colNum + ', 1fr)' });
+            $('.video').css({ 'grid-column': '', 'grid-row': '' });
+        }
+
+        function createLive(link, tag) {
+            var element = document.createElement("div");
+            element.className = "video";
+            element.innerHTML = `
+                <button type="button" class="minus" onclick="removeLive(this)">
+                    <i class="fas fa-minus fa-1x"></i>
+                </button>
+                <button type="button" class="tag" onclick="tagLive(this)">
+                    <i class="fas fa-tag fa-1x"></i>
+                </button>
+                <button type="button" class="expand" onclick="expandLive(this)">
+                    <i class="fas fa-expand fa-1x"></i>
+                </button>
+                <p class="tagText">${tag ? tag : ""}</p>
+                <iframe
+                    id = "${link}"
+                    src = "https://www.facebook.com/plugins/video.php?href=${link}"
+                    width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
+                    allowTransparency = "true" allowFullScreen = "true" webkit-playsinline ></iframe >
+            `
+            return element;
+        }
+
         function initLive() {
             var videoContainer = document.getElementById("videoContainer");
 
             // Handle customized channel
             var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
-            for (link of fbLives) {
-                if (link) {
-                    var element = document.createElement("div");
-                    element.className = "video";
-                    element.innerHTML = `
-                        <button type="button" class="minus" onclick="removeLive(this)">
-                            <i class="fas fa-minus fa-1x"></i>
-                        </button>
-                        <iframe
-                            id = "${link}"
-                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
-                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
-                            allowTransparency = "true" allowFullScreen = "true" webkit-playsinline ></iframe >
-                    `
-
+            for (live of fbLives) {
+                if (live.link) {
+                    var link = live.link;
+                    var tag = live.tag;
+                    var element = createLive(link, tag);
                     videoContainer.append(element);
                 }
-            }
-
-            // Handle default channel
-            if (liveData.length <= 0) {
-                defaultDiv.innerHTML = "<h1>No Default Channel</h1>"
             }
 
             for (obj of liveData) {
-                var link = obj.url;
-                if (link) {
-                    var element = document.createElement("div");
-                    element.className = "video";
-                    element.innerHTML = `
-                        <button type="button" class="minus" onclick="removeLive(this)">
-                            <i class="fas fa-minus fa-1x"></i>
-                        </button>
-                        <iframe
-                            id = "${link}"
-                            src = "https://www.facebook.com/plugins/video.php?href=${link}"
-                            width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
-                            allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
-                    `
+                if (obj.url) {
+                    var link = obj.url;
+                    var tag = obj.tag;
+                    var element = createLive(link, tag);
                     videoContainer.append(element);
                 }
             }
 
-
+            resize();
         }
 
         function addLive() {
             var link = prompt("Please enter the Facebook link");
             if (link != null) {
-                var element = document.createElement("div");
-                element.className = "video";
-                element.innerHTML = `
-                    <button type="button" class="minus" onclick="removeLive(this)">
-                        <i class="fas fa-minus fa-1x"></i>
-                    </button>
-                    <iframe
-                        id = "${link}"
-                        src = "https://www.facebook.com/plugins/video.php?href=${link}"
-                        width = "100%" height = "100%" style = "border:none;overflow:hidden" scrolling = "no" frameborder = "0"
-                        allowTransparency = "true" allowFullScreen = "true" webkit - playsinline ></iframe >
-                `
-
+                var element = createLive(link, null);
                 videoContainer.insertBefore(element, videoContainer.children[0]);
 
                 var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
-                fbLives.push(link)
+                fbLives.push({ "link": link, "tag": null })
                 localStorage.setItem("fbLives", JSON.stringify(fbLives));
+
+                resize();
+            }
+        }
+
+        function resizeLive() {
+            var number = prompt("Please enter the Column Number");
+            if (number != null) {
+                localStorage.setItem("colNum", number);
+                resize();
             }
         }
 
@@ -217,12 +268,45 @@
             videoContainer.removeChild(liveElement);
 
             var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
-            var index = fbLives.indexOf(link);
+
+            console.log(fbLives)
+            var index = fbLives.findIndex(x => x.link == link);
+            console.log(link, index)
             if (index > -1) {
                 fbLives.splice(index, 1);
             }
             localStorage.setItem("fbLives", JSON.stringify(fbLives));
         }
+
+        function tagLive(element) {
+            var tagText = prompt("Please enter the tag");
+
+            var fbLives = JSON.parse(localStorage.getItem("fbLives")) || [];
+            for (live of fbLives) {
+                if (live.link = element.id) {
+                    element.
+                        live.tag = tagText;
+                }
+            }
+            localStorage.setItem("fbLives", JSON.stringify(fbLives));
+        }
+
+        function expandLive(element) {
+            var liveElement = element.parentElement;
+            var colNum = Number.parseInt(localStorage.getItem("colNum")) || 2;
+            var columnEnd = Math.ceil(colNum / 2) + 1;
+
+            $('.video').css({
+                'grid-column': '',
+                'grid-row': ''
+            });
+
+            $(liveElement).css({
+                'grid-column': '1 / ' + columnEnd,
+                'grid-row': '1 / ' + columnEnd
+            });
+        }
+
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "25%";
@@ -231,6 +315,7 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
     </script>
 </body>
 
